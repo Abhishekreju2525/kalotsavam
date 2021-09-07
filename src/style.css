@@ -8,3 +8,18 @@
 html {
     scroll-behavior: smooth;
   }
+
+
+  /**section-top**/
+
+  .section-top{
+   width:100vw;
+    height:100vh;
+    
+  }
+
+  h1{
+      font-size:200%;
+      font-weight:20;
+      color:black;
+  }
