@@ -1,0 +1,10 @@
+.bg-light{
+    background-color: grey;
+    
+}
+.bg-dark{
+    background-color: black;
+}
+html {
+    scroll-behavior: smooth;
+  }
