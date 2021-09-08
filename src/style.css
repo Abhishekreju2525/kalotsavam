@@ -84,3 +84,7 @@ html {
     width:100%;
     max-height:400px !important;
   }
+  header{
+    position:fixed;z-index:155;
+    top:0;left:0;width:100vw;
+  }
