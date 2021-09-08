@@ -18,13 +18,17 @@ html {
       margin:0;
       padding:0;
   }
+  body{
+    max-width:100vw;
+    overflow:hidden;
+  }
 
 
   /**section-top**/
 
   .section-top{
    width:100vw;
-    height:100vh;
+  
     margin-right:0;overflow:hidden;
     padding-right:0;
     padding-top:56px;
@@ -32,6 +36,10 @@ html {
     background-size: 40px 40px;
     background-position: -10px -10px;
     background-attachment: fixed;
+    
+  }
+  .section-menu{
+   padding-top:20px;
     
   }
   .section-top col{
@@ -88,4 +96,11 @@ html {
   header{
     position:fixed;z-index:155;
     top:0;left:0;width:100vw;
+  }
+
+  .menu-logo{
+    font-size:370%;
+    display:block;
+    color:rgb(46, 46, 46);
+    margin-left:5%;
   }
