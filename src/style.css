@@ -20,7 +20,7 @@ html {
   }
   body{
     max-width:100vw;
-    overflow:hidden;
+    overflow-x: hidden;
   }
 
 
@@ -101,6 +101,40 @@ html {
   .menu-logo{
     font-size:370%;
     display:block;
-    color:rgb(46, 46, 46);
+    color:rgb(59, 59, 59);
     margin-left:5%;
   }
+ 
+  .outer {
+    margin: 50px;
+  }
+  
+  .button {
+    border: none;
+    border-radius: 10rem;
+    
+    height: 40px;
+    width:9rem;
+    display: block;
+ color:white;
+    background: linear-gradient(to right, rgb(41, 41, 41) 50%, rgb(96, 201, 64) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+  }
+  
+  .button:hover {
+    background-position: left bottom;
+    color:white;
+    width:160px;
+    letter-spacing:1px;
+  }
+  
+
+
+
+
+  
+ 
+
+  
