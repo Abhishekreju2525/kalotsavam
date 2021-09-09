@@ -141,10 +141,6 @@ html {
   
   
 }
-.required:after {
-  content:" *";
-  color: red;
-}
 
   
  .regform{
