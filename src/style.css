@@ -75,6 +75,9 @@ html {
       margin:0;
       width:100vw;
   }
+  nav{
+    width:100vw;
+  }
 
   @media only screen and (max-width: 1027px) {
     
@@ -114,7 +117,7 @@ html {
     border-radius: 10rem;
     
     height: 40px;
-    width:9rem;
+    width:8.5rem;
     display: block;
  color:white;
     background: linear-gradient(to right, rgb(41, 41, 41) 50%, rgb(96, 201, 64) 50%);
@@ -126,19 +129,29 @@ html {
   .button:hover {
     background-position: left bottom;
     color:white;
-    width:160px;
-    letter-spacing:1px;
+    width:140px;
+    letter-spacing:0.5px;
   }
   
 
 .section-form
 {
-  padding-top:80px;
+  padding-top:80px;width:100vw;
+  
+  
   
 }
-
+.required:after {
+  content:" *";
+  color: red;
+}
 
   
- 
+ .regform{
+   align-items:center;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ }
 
   
