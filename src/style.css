@@ -50,7 +50,25 @@ html {
       height:100vh;
   }
 
- 
+  h3{
+    font-size:180%;
+    word-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+      letter-spacing: 1px;
+  }
+  h3:after{
+    display: block;
+    height: 2px;
+    background:rgb(0, 185, 40);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    content:" ";
+    width:100px;
+    margin:0 auto;
+    margin-top: 30px;
+  }
   h1{
     margin-top:0;
     margin-bottom:20px;
