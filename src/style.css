@@ -61,7 +61,7 @@ html {
   h3:after{
     display: block;
     height: 2px;
-    background:rgb(0, 185, 40);
+    background:rgb(0, 255, 55);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     content:" ";
@@ -141,7 +141,7 @@ html {
   }
  
   .outer {
-    
+    margin:50px;
   }
   
   .button {
@@ -164,6 +164,25 @@ html {
     width:140px;
     letter-spacing:0.5px;
   }
+  .button2 {
+    border: none;
+    border-radius: 10rem;
+    
+    height: 40px;
+    width:8.5rem;
+    display: block;
+ color:white;
+    background: linear-gradient(to right, rgb(41, 41, 41) 50%, rgb(96, 201, 64) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+  }
+  
+  .button2:hover {
+    background-position: left bottom;
+    color:white;
+    
+  }
   
 
 .section-form
@@ -184,7 +203,7 @@ html {
 
  .section-about{
    width:100vw;
-   padding-top:60px;
+   padding-top:30px;
    background:rgb(255, 255, 255);
   color:rgb(31, 31, 31);
   background-image: radial-gradient(rgb(29, 29, 29) 1px, transparent 0);
