@@ -15,6 +15,12 @@ html {
     width:100vw;
                                                 
   }
+  footer{
+    font-family: 'Segoe UI', sans-serif;
+    font-weight:100;
+    letter-spacing:1px;padding:0;
+    width:100vw;
+  }
   .container{
       margin:0;
       padding:0;
@@ -250,4 +256,9 @@ html {
 .bg-t{
   background:rgba(0,0,0,0.5);
   transition: background-color 0.5s ease;
+}
+
+.footer-socialicons{
+  color:white;
+  font-size:130%;
 }
