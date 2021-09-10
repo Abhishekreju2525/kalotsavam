@@ -1,13 +1,5 @@
+window.onscroll = () => {
+  const nav = document.querySelector('#navbar');
+  if(this.scrollY <= 10) nav.className = 'navbar navbar-expand-lg fixed-top navbar-dark bg-t'; else nav.className = 'navbar navbar-expand-lg fixed-top navbar-light bg-light';
+};
 
-$(document).ready(function(){
-    $(window).scroll(function(){
-        var scroll = $(window).scrollTop();
-        if (scroll > 300) {
-          $(".nav").css("background" , "blue");
-        }
-  
-        else{
-            $("nav").css("background" , "#333");  	
-        }
-    })
-  })
