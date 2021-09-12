@@ -1,4 +1,4 @@
-# school website for nhss eprdala
+# school website for nhss
 
 
 
