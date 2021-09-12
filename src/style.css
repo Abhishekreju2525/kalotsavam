@@ -110,27 +110,59 @@ html {
   .title-lg{
     font-weight: 600;font-size:50px;
     width:100%;
-    text-align:center;
+    text-align: left;
+     padding-left:6%;
     color: white;
-    
-    left: 0;
-    top:160px;
-    right: 0;
-    text-align: center;
-     font-family: 'Raleway', sans-serif;
+   
+    font-family: 'Raleway', sans-serif;
+   }
+   .title-about{
+     font-size:50%;letter-spacing: .4px;
+     font-weight: 300;padding-right:6%;
+     
    }
   @media only screen and (max-width: 1027px) {
     .title-lg{
-     
+     text-align: left;
+     padding-left:6%;
       font-size:25px;
+    }
+    .button6{
+      height:25px;
+    }
+
+  }
+  @media only screen and (max-width: 991px) {
+    .bg-color{
+background-color: rgb(255, 255, 255);
+color:black;
+    }
+    .dyn-nav{
+      color:rgb(0, 83, 35);
     }
 
   }
 
+.button6{
+  border: 0.5px solid white;
+  width:145px;
+  height:35px;
+  font-size:18px;
+  text-align:center;
+  border-radius:50px;
+  background: transparent;
+  color:white;
+  margin-bottom:5px;
+  transition:0.4s ease
+
+}
+.button6:hover{
+  width:170px;
+}
 
 .title-tag{
   font-family: 'Roboto' , sans-serif;
-  font-size: 80%;
+  font-size: 90%;
   font-weight: 500;
   color: white;padding-top:20px;
   letter-spacing:0.8px;
@@ -200,20 +232,16 @@ html {
   }
   .button3 {
     border: none;
-    border-radius: 0.4rem;
-    
-    height: 40px;
-    width:8.5rem;
+    border-radius: 2rem;
+    height: 33px;
+    width:9.2rem;
+    margin-left:1.5%;
     display: block;
- color:white;
-    background: linear-gradient(to right, rgb(41, 41, 41) 50%, rgb(96, 201, 64) 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    transition: all .5s ease-out;
+    color:rgb(0, 177, 0);
+    border: 0.5px solid white;
+    background: transparent;
   }
-.button3:hover{
-  box-shadow: 0 3px 5px rgb(0 0 0 / 0.5);
-}
+
 .section-form
 {
   padding-top:80px;width:100vw;
@@ -229,7 +257,7 @@ html {
 
  .section-about{
    width:100vw;
-   padding-top:30px;
+   padding-top:60px;
    padding-bottom:40px;
    background:rgb(255, 255, 255);
   color:rgb(31, 31, 31);
@@ -260,5 +288,15 @@ html {
 
 .footer-socialicons{
   color:white;
-  font-size:130%;
+  font-size:100%;
+}
+
+.section-map{
+  padding:0;
+  
+}
+.scrollWin{
+  background:transparent;
+  color:white;
+  border:none;
 }

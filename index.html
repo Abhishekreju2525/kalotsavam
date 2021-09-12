@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
     rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c480cc0a92.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <link rel="stylesheet"
@@ -43,28 +44,28 @@
   <!--navbar-->
   <header>
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark bg-t" style="position:fixed;top:0;left:0;">
-      <div class="container-fluid">
+      <div class="container-fluid" style="padding:0;">
         <button class="button3" type="button" onclick="window.location.href='home.html'"> Kalolsavam 2021 </button>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        <button style="outline:none;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
           aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span> 
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="collapse navbar-collapse bg-color" id="navbarTogglerDemo02">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item" style="padding-left:10px;">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html"><div class="dyn-nav">Home</div></a>
             </li>
             <li class="nav-item" style="padding-left:10px;">
-              <a class="nav-link active" href="form.html">Gallery</a>
+              <a class="nav-link active" href="form.html"><div class="dyn-nav">Gallery</div></a>
             </li>
             <li class="nav-item" style="padding-left:10px;">
-              <a class="nav-link active" href="about.html">About</a>
+              <a class="nav-link active" href="about.html"><div class="dyn-nav">About</div></a>
             </li>
             <li class="nav-item" style="padding-left:10px;">
-              <a class="nav-link active" href="form.html">Our staff</a>
+              <a class="nav-link active" href="form.html"><div class="dyn-nav">Our staff</div></a>
             </li>
             <li class="nav-item" style="padding-left:10px;">
-              <a class="nav-link active" href="form.html">Contact</a>
+              <a class="nav-link active" href="form.html"><div class="dyn-nav">Contact</div></a>
             </li>
             <!--<li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -87,21 +88,26 @@
 
 
         NAVAJIVANA HIGHER SECONDARY SCHOOL
-        <p class="title-tag">
+        <p class="title-tag" style="padding-bottom:10px;">
           PERDALA
         </p>
+        <button class="button6"><div style="float:left;margin-left:7px;">Know more&nbsp;&nbsp; </div>   <i class="bi bi-arrow-right-circle-fill" style="float:right;"></i></button>
+        
 
 
 
       </div>
 
+      <div style="background:transparent;width:100vw;text-align:center;position:absolute;bottom:5vh;left:auto;color:white;">
 
+        <button onclick="window.location.href='#about'" class="scrollWin"><i class="fas fa-chevron-down fa-1x"></i></button>
+        </div>
 
     </div>
 
 
   </section>
-  <section class="section-about">
+  <section id="about" class="section-about">
 
 
 
@@ -122,28 +128,96 @@
   <!--Top section end-->
 
 
+
+<section class="section-map">
+
+  <div class="container-fluid" style="display:flexbox;flex-direction: row-reverse;">
+    <div class="row">
+
+
+
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6" style="padding:0;margin:0;height:55vh;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15575.836089156952!2d75.0696874!3d12.5849524!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xde315fc15f1e6fe3!2sNavajivana%20Higher%20Secondary%20School%20Perdala!5e0!3m2!1sen!2sin!4v1631424335640!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+
+
+
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6" style="padding:30px;margin:0;height:55vh;">
+        <form method="POST" action="">
+          
+          <label for="inputName" class="col-sm-2 col-form-label">Name</label><br>
+          <div class="col">
+            <input type="text" class="form-control" id="inputName">
+          </div>
+
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label><br>
+          <div class="col">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+         
+          
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Message</label><br>
+            <div class="col">
+              <textarea type="text" class="form-control" id="inputMessage" style="max-height:13vh;">
+
+                </textarea>
+            </div><br>
+         
+          
+         
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+      
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+</section>
+
+
+
+
+
   <!-- Footer -->
   <footer class="bg-dark text-white">
 
     <div class="container p-3">
+      <div class="col">
+        <section class="mb-4">
 
-      <section class="mb-4">
+          <a class="btn btn-floating m-1" href="#!" role="button"><i class="bi bi-facebook footer-socialicons"></i></a>
+  
+  
+          <a class="btn btn-floating m-1" href="#!" role="button"><i class="bi bi-twitter footer-socialicons"></i></a>
+  
+  
+          <a class="btn btn-floating m-1" href="#!" role="button"><i class="bi bi-google footer-socialicons"></i></a>
+  
+  
+          <a class="btn btn-floating m-1" href="#!" role="button"><i class="bi bi-instagram footer-socialicons"></i></a>
+  
+          <a class="btn btn-floating m-1" href="#!" role="button"><i class="bi bi-youtube footer-socialicons"></i></a>
+  
+  
+        </section>
+      </div>
+      
 
-        <a class="btn btn-floating m-1" href="#!" role="button"><i class="bi bi-facebook footer-socialicons"></i></a>
 
-
-        <a class="btn btn-floating m-1" href="#!" role="button"><i class="bi bi-twitter footer-socialicons"></i></a>
-
-
-        <a class="btn btn-floating m-1" href="#!" role="button"><i class="bi bi-google footer-socialicons"></i></a>
-
-
-        <a class="btn btn-floating m-1" href="#!" role="button"><i class="bi bi-instagram footer-socialicons"></i></a>
-
-        <a class="btn btn-floating m-1" href="#!" role="button"><i class="bi bi-youtube footer-socialicons"></i></a>
-
-
-      </section>
+      <div class="col">
+        
+      </div>
+      
+      
+      <div class="col">
+        
+      </div>
+      
 
 
 
@@ -164,8 +238,11 @@
 
   <!-- Footer -->
 
-
-
+  <script>
+    function scrollWin() {
+      window.scrollBy(0, window.innerHeight);
+    }
+    </script>
   <script src="/src/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
