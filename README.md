@@ -1,7 +1,5 @@
-# kalotsavam-website
-Website for NHSS Perdala Kalotsavam 2021-22
+# school website for nhss eprdala
 
-- Consists live streaming of programs
-- Exhibiting literary entries of students
-- Item selection form for students
+
+
 
