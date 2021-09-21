@@ -89,12 +89,13 @@ h1 {
   padding-top: 16%;
   letter-spacing: 1px;
 }
-h5{
+.card-title{
   text-transform: uppercase;
   font-weight:600;
   color:rgb(73, 116, 101);
   font-family: "Raleway", sans-serif;
   overflow-wrap: break-word;
+  font-size: 01rem;
 }
 h1,
 h2,
