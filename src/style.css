@@ -1,3 +1,6 @@
+a{
+text-decoration: none;
+}
 .bg-light {
   background-color: grey;
 }
@@ -487,4 +490,7 @@ div.imagetiles div.col-lg-3.col-md-3.col-sm-3.col-xs-6{
 }
 .section-abouts .card-img-top{
   border-radius:6px 6px 0px 0px;
+}
+footer a{
+  text-decoration: none;
 }
