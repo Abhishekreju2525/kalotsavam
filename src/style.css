@@ -49,7 +49,7 @@ body {
   background-attachment: inherit;
   background-size: auto 120vh;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: inherit;
 }
 .section-menu {
   padding-top: 20px;
@@ -110,7 +110,9 @@ h6 {
 
   font-family: "Roboto", sans-serif;
 }
-
+.section-team .card-title{
+  margin-bottom:0 !important;
+}
 .row {
   padding: 0;
   margin: 0;
@@ -135,6 +137,39 @@ nav {
   font-weight: 300;
   padding-right: 6%;
 }
+
+.inp{
+  border:none !important;
+  outline: 0 !important;
+  
+  padding:10%;
+  box-shadow: rgba(0, 0, 0, 0.493) 0px 1px 4px;
+  border-radius: 7px !important;
+ background: transparent !important;
+ 
+  color:white;
+ 
+}
+.inpt{
+  border:none !important;
+  outline: 0;
+  height:90px;
+  box-shadow: rgba(0, 0, 0, 0.493) 0px 1px 4px;
+  border-radius: 10px !important;
+ background: transparent !important;
+  color:white;
+ 
+}
+
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none !important;
+}
+
 @media only screen and (max-width: 1027px) {
   .title-lg {
     text-align: left;
@@ -213,6 +248,7 @@ header {
   width: 8.5rem;
   display: block;
   color: white;
+  
   background: rgb(96, 201, 64);
   transition: all 0.5s ease-out;
 
@@ -289,17 +325,20 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
-
+.section-team .card{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
+  outline:0 !important;
+  border:0 !important;
+}
 .section-about {
   width: 100vw;
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
   background: rgb(255, 255, 255);
   color: rgb(31, 31, 31);
   background-image: radial-gradient(rgb(136, 136, 136) 1px, transparent 0);
   background-size: 40px 40px;
-  padding-left: 10%;
-  padding-right: 10%;
+  
   background-position: -10px -10px;
   background-attachment: fixed;
 }
@@ -370,11 +409,39 @@ header {
 .inputc {
   border-radius: 40px;
 }
-.section-units{
-  padding: 50px 0 100px 0;
+.section-skills {
+  color: rgb(54, 54, 54);
+  height: auto;
+  margin-top: 0;
+  margin: 0;
+  /* background: rgba(0, 0, 0, 0.3);
+  background-image: radial-gradient(rgb(83, 83, 83) 1px, transparent 0);
+  background-size: 40px 40px;
+
+  background-position: 0px 0px;
+  background-attachment: scroll; */
+ 
 }
-
-
+.section-skills .card {
+  border: 0 !important;
+  background: transparent !important;
+  margin-bottom: 14px !important;
+  transition:0.4s ease;
+}
+.section-skills .card-img-top {
+  width: 40%;
+  height: auto;
+  display: block !important;
+  margin: auto !important;
+  
+}
+.section-skills .card:hover{
+  transform: scale(1.1);
+}
+.section-skills .card-body {
+  display: block !important;
+  margin: auto !important;
+}
 /* Cards */
 
 * {
@@ -403,12 +470,40 @@ body {
   clear: both;
 }
 
+
+
+.form-container {
+  padding:0 !important;
+  margin: 0;
+  overflow: hidden;
+
+
+}
+.container-form{
+  padding:10% !important;
+  width:100%;
+  height:180%;
+  overflow:hidden;
+  
+}
+
+
+
+
+
 /* Responsive columns */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
     display: block;
     margin-bottom: 20px;
+    
+  }
+  .section-skills .card-img-top {
+    width: 25%;
+    height: auto;
+    display: block !important;
+    margin: auto !important;
     
   }
 }
