@@ -74,7 +74,7 @@ h3 {
 h3:after {
   display: block;
   height: 2px;
-  background: rgb(0, 175, 117);
+  background: rgb(0, 31, 71);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   content: " ";
@@ -325,10 +325,42 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
+.section-team{
+  padding:50px;
+}
 .section-team .card{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
   outline:0 !important;
   border:0 !important;
+  background: rgb(0, 31, 71);
+  padding-top:15px;
+  border-radius: 20px;
+  color:white;
+  transition: 0.3s ease;
+}
+.section-team .card:hover{
+  transform: scale(1.05);
+  
+}
+.section-team .card-img-top{
+  width:80% ;
+  border-radius:100%;
+}
+.section-team .card-title{
+  color:white;
+  font-size:15px;
+}
+.section-about .card{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
+  outline:0 !important;
+  border:0 !important;
+  background: rgb(0, 31, 71);
+
+  border-radius: 20px;
+  color:white;
+}
+.section-about .card-img-top{
+  border-radius: 20px 20px 0px 0px;
 }
 .section-about {
   width: 100vw;
@@ -363,6 +395,17 @@ header {
   background-image: radial-gradient(rgb(204, 204, 204) 1px, transparent 0);
   background-size: 40px 40px;
 
+  background-position: -10px -10px;
+}
+.section-aboutg {
+  width: 100vw;
+  padding-top: 56px;
+  padding-bottom: 40px;
+  background: rgb(255, 255, 255);
+  color: rgb(31, 31, 31);
+  background-image: radial-gradient(rgb(204, 204, 204) 1px, transparent 0);
+  background-size: 40px 40px;
+padding-left:0;
   background-position: -10px -10px;
 }
 
@@ -410,10 +453,14 @@ header {
   border-radius: 40px;
 }
 .section-skills {
-  color: rgb(54, 54, 54);
+  color: rgb(0, 18, 53);
   height: auto;
   margin-top: 0;
   margin: 0;
+  padding-top:50px;
+  padding-bottom:50px;
+  background: rgb(219, 219, 219);
+  
   /* background: rgba(0, 0, 0, 0.3);
   background-image: radial-gradient(rgb(83, 83, 83) 1px, transparent 0);
   background-size: 40px 40px;
@@ -441,6 +488,10 @@ header {
 .section-skills .card-body {
   display: block !important;
   margin: auto !important;
+  color:rgb(0, 1, 58);
+}
+.section-skills .card-title{
+  color:rgb(0, 24, 56);
 }
 /* Cards */
 
@@ -595,4 +646,128 @@ footer a{
 footer{
   font-weight:300;
   font-family: "Raleway", sans-serif;font-size:1rem;
+}
+/* gallery */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
 }
