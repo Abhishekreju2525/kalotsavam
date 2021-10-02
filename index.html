@@ -36,7 +36,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 
@@ -140,7 +140,7 @@
   
   
   
-          <div class="col-12 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+          <div class="col-12 col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
   
   
             <div class="card w-75" style="width: 80%;margin: auto;display: block;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
@@ -157,8 +157,8 @@
            
           </div>
   
-   <div class="col-12 col-sm-8 col-md-10 col-lg-10 col-xl-10 col-xxl-10 contactin"
-            style="padding:30px 30px;margin:0;overflow:hidden;">
+   <div class="col-12 col-sm-8 col-md-9 col-lg-9 col-xl-9 col-xxl-9 contactin"
+            style="padding:50px 30px 30px 30px !important;margin:0;overflow:hidden;">
   
             <p class="text" style="justify-content: center;display: block;margin: auto;line-height:30px;">
               Navajivana Higher Secondary school Perdala is a prestigious educational institution established in 1944 by the
@@ -368,19 +368,19 @@
               <h3>get in touch</h3>
               <!-- contact form -->
   
-              <form method="POST" action="" id="submit-form">
+              <form action="" id="submit-form">
   
                 <!-- <label for="inputName" class="col-sm-2 col-form-label" >Name</label><br> -->
                 <div class="form-floating mb-3 mt-3">
-                  <input type="text" class="form-control inp" id="floatingInput" placeholder="Name">
+                  <input type="text" class="form-control inp" id="floatingInput" placeholder="Name" name="name">
                   <label for="floatingInput">Name</label>
                 </div>
                 <div class="form-floating mb-3 h-75">
-                  <input type="text" class="form-control inp" id="floatingInput" placeholder="phone">
+                  <input type="text" class="form-control inp" id="floatingInput" placeholder="phone" name="phone">
                   <label for="floatingPassword">Phone number</label>
                 </div>
                 <div class="form-floating mb-3 ">
-                  <textarea class="form-control inpt " placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                  <textarea class="form-control inpt " placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="message"></textarea>
                   <label for="floatingTextarea2">Message</label>
                 </div>
                 
@@ -520,6 +520,22 @@
   <!-- Footer -->
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <script>
     function scrollWin() {
       window.scrollBy(0, window.innerHeight);
@@ -533,44 +549,26 @@
       loader.style.display = "none";
     })
 
-
-
-
-
-
-
   </script>
-  <script>
-    $(document).ready(function(){
+ <script>
+  $("#submit-form").submit((e)=>{
+      e.preventDefault()
+      $.ajax({
+          url:"https://script.google.com/macros/s/AKfycbzTsoAMZyD8SmtC-jVW7hHVyNmwBbIIE2a6gKcd0QG_ZON707goeCLj6X0KX_jZpAKY/exec",
+          data:$("#submit-form").serialize(),
+          method:"post",
+          success:function (response){
+              alert("Form submitted successfully")
+              window.location.reload()
+              //window.location.href="https://google.com"
+          },
+          error:function (err){
+              alert("Something Error")
 
-$(".filter-button").click(function(){
-    var value = $(this).attr('data-filter');
-    
-    if(value == "all")
-    {
-        //$('.filter').removeClass('hidden');
-        $('.filter').show('1000');
-    }
-    else
-    {
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-        $(".filter").not('.'+value).hide('3000');
-        $('.filter').filter('.'+value).show('3000');
-        
-    }
-});
-
-if ($(".filter-button").removeClass("active")) {
-$(this).removeClass("active");
-}
-$(this).addClass("active");
-
-});
-
-
-
-  </script>
+          }
+      })
+  })
+</script>
   <script src="/src/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

@@ -77,6 +77,14 @@ h3 {
   margin-bottom: 30px;
   letter-spacing: 1px;
 }
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
 h3:after {
   display: block;
   height: 2px;
@@ -262,7 +270,8 @@ header {
 
 }
 .button4:hover{
-  background: rgb(65, 134, 43);
+  width:8.9rem;
+ background-image: linear-gradient(45deg, #874da2 9%, #c43a30 92%);
 }
 .button {
   border: none;
@@ -354,14 +363,14 @@ header {
   display:block;
   margin-top:5px;
   text-transform: capitalize;
-  font-weight:500;font-size:80%;
+  font-weight:500;font-size:87%;
   color:rgb(95, 95, 95);
 }
 .section-team .card-footer{
   padding:2% 3% 2% 5%;margin-bottom:0;
   margin-top:10px;width:100%;
   height:50px;
-outline:none;text-align: left;
+outline:none;
 background-color: white;
 border-radius:0px 20px 0px 0px !important;
 color:black !important;
