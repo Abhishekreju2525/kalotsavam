@@ -315,10 +315,10 @@ header {
   border: none;
   border-radius: 2rem;
   height: 33px;
-  width: 9.2rem;
+  min-width: 9.2rem;
   margin-left: 1.5%;
   display: block;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 226, 96);
 
   background: transparent;
 }
